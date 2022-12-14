@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        .column {
+            display: inline-block;
+            width: 47%;
+            vertical-align: top;
+        }
+
+        .input-group {
+            display: inline-block;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            display: inline-block;
+            width: 30%;
+            height: 100%;
+            vertical-align: top;
+        }
+
+        .input-field {
+            display: inline-block;
+            width: 60%;
+        }
+
+        .alignRight {
+            text-align: right;
+        }
+
+        .input-field:hover {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="01-result.html">
+        <div class="column">
+            <div class="input-group">
+                <label class="label" for="name">Name</label>
+                <input class="input-field" id="name" type="text" name="name" value="" required />
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="surname">Surname</label>
+                <input class="input-field" id="surname" type="text" name="surname" value="" required />
+            </div>
+
+            <div class="input-group">
+                <label class="label">Gender</label>
+
+                <div class="input-field">
+                    <label for="male">Male</label>
+                    <input id="male" type="radio" name="gender" value="Male">
+                    <label for="female">Female</label>
+                    <input id="female" type="radio" name="gender" value="Female">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="city">City</label>
+
+                <input class="input-field" list="city" type="text" name="city" />
+                <datalist id="city">
+                    <option value="Elbistan"></option>
+                    <option value="Türkoglu"></option>
+                    <option value="Göksun"></option>
+                    <option value="Afsin"></option>
+                    <option value="Ekinözü"></option>
+                </datalist>
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="email">E-Mail</label>
+                <input class="input-field" id="email" type="email" name="email" required />
+            </div>
+
+
+            <div class="input-group">
+                <label class="label" for="personalWebpage">Kisisel Site</label>
+                <input class="input-field" id="personalWebpage" type="text" name="personalWebpage" value="" required />
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="PhoneNumber">Phone Number</label>
+                <input class="input-field" id="PhoneNumber" type="tel" name="PhoneNumber" value="" required />
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="input-group">
+                <label class="label">Hobies</label>
+                <div class="input-field">
+                    <input id="hoby1" type="checkbox" name="hoby1" value="Futball">
+                    <label for="hoby1">Futball</label>
+                    <br>
+                    <input id="hoby2" type="checkbox" name="hoby2" value="Voleyball">
+                    <label for="hoby2">Voleyball</label>
+                    <br>
+                    <input id="hoby3" type="checkbox" name="hoby3" value="Basketball">
+                    <label for="hoby3">Basketbol</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="profilPhoto">Profile Photo</label>
+                <input class="input-field" id="profilPhoto" type="file" name="profilPhoto" value=""
+                    placeholder="Select a file" required />
+            </div>
+
+            <div class="input-group">
+                <label class="label" for="addresse">Addresse</label>
+                <textarea id="addresse" class="input-field" name="addresse" rows="4" value="" required>
+                </textarea>
+            </div>
+
+            <div class="input-group">
+                <div class="label"></div>
+                <div class="input-field alignRight">
+                    <button type="submit" style="background-color:darkgrey;">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

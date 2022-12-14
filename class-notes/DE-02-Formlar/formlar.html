@@ -99,23 +99,24 @@
         </div> <br> <br>
       
         <!--SELECT GROUP-->
-        <div>
-            <label for="tatli">Hangi tatliyi seversiniz</label> <br>
-            <select name="tatli" id="tatli">
+       <div>
+          <label for="tatlı">Hangi Tatlıyı Seversiniz?</label>
+          <br />
+          <select name="tatlı" id="tatlı">
+            <optgroup label="Şerbetli Tatlılar" >
+             
+            <option value="künefe" >Künefe</option>
+              <option value="sarma" >Sarma</option>
+              <option value="havuç-dilimi">Havuç Dilimi</option>
+              <option value="kadayıf dolması">Kadayıf Dolma</option>
+            </optgroup>
 
-                <optgroup label="Serbetli Tatlilar">
-                    <option value="Künefe"></option>
-                    <option value="Baklava"></option>
-                    <option value="Havuc Dilimi"></option>
-
-               
-
-                <optgroup label="Sütlü Tatlilar">
-                    <option value="Muhallebi"></option>
-                    <option value="Sütlac"></option>
-                    <option value="Kazandibi"></option>
-
-                </optgroup> <br>
+            <optgroup label="Sütlü Tatlılar">
+              <option value="muhallebi">Muhallebi</option>
+              <option value="kazandibi">Kazandibi</option>
+            </optgroup>
+          </select>
+        </div> <br/>
                 <!-- datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
                 <!-- DATALIST -->
                 <div>
