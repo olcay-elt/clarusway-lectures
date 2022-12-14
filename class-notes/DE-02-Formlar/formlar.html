@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+
+<body>
+    <h1>FORMLAR</h1>
+    <form action="result.html">
+
+        <div>
+
+            <label for="ad">AD:</label> <br>
+            <input id="ad" type="text" name="isim" value="" placeholder="Lütfen isim giriniz" required />
+            <br><br>
+            <label for="soyad">SOYAD:</label> <br>
+            <input id="ad" type="text" name="soyisim" value="" placeholder="Lütfen isim giriniz" required />
+
+        </div>
+        <br>
+        <div>
+            <label for="parola">PASSWORD:</label> <br>
+            <input id="parola" type="parola" placeholder="Lütfen password giriniz" name="password" value=""
+                minlength="4" maxlength="8" />
+        </div>
+        <br>
+        <!--RADIO-->
+        <div>
+            <label>CİNSİYET:</label> <br>
+            <!-- checked=sayfa yüklendiğinde check li işaretli gelsin -->
+            <label for="erkek">Erkek</label>
+            <input id="erkek" type="radio" name="cinsiyet" value="erkek" checked>
+            <label for="kadın">Kadın</label>
+            <input id="kadın" type="radio" name="cinsiyet" value="kadın">
+            <label for="none">none</label>
+            <input id="none" type="radio" name="cinsiyet" value="none">
+
+        </div> <br>
+        <!--CHECKBOX-->
+
+        <div>
+            <label>LÜTFEN FAVORİ ARABANIZI SEÇİNİZ</label> <br>
+
+            <label for="bmw">BMW</label>
+            <input id="bmw" type="checkbox" name="araba1" value="bmw">
+
+            <label for="merco">MERCEDES</label>
+            <input id="merco" type="checkbox" name="araba2" value="mercedes">
+
+            <label for="audi">AUDI</label>
+            <input id="audi" type="checkbox" name="araba3" value="audi">
+        </div>
+
+        <br>
+
+        <!--NUMBER-->
+        <div>
+            <label for="yas">YAS:</label> <br>
+            <input id="yas" type="number" name="yaş" value="0" min="0" max="100" step="2">
+            <!-- step=sayının kaçar artmasını istiyorsak onu belirler -->
+        </div>
+        <br>
+        <!-- SEARCH -->
+        <div>
+
+            <label for="ara">ARA</label> <br>
+            <input id="ara" type="search" name="aranan">
+            <button>SEARCH</button>
+        </div> <br>
+
+        <!-- COLOR -->
+        <div>
+            <label for="renk">RENK:</label>
+            <input id="renk" type="color" name="renk">
+
+        </div> <br>
+
+        <div>
+            <label for="date">Tarih</label> <br>
+            <input id="date" type="date" name="date" min="2000-01-01" max="2023-01-01">
+        </div> <br>
+        <div>
+
+            <label for="dosya">Dosya yükleyiniz</label> <br>
+            <input type="dosya" name="dosya" id="dosya">
+
+        </div> <br>
+
+        <div>
+
+            <label for="">TELEFON</label> <br>
+            <input type="tel" name="tel" id="tel" placeholder="555-555-55-55"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        </div> <br> <br>
+      
+        <!--SELECT GROUP-->
+        <div>
+            <label for="tatli">Hangi tatliyi seversiniz</label> <br>
+            <select name="tatli" id="tatli">
+
+                <optgroup label="Serbetli Tatlilar">
+                    <option value="Künefe"></option>
+                    <option value="Baklava"></option>
+                    <option value="Havuc Dilimi"></option>
+
+               
+
+                <optgroup label="Sütlü Tatlilar">
+                    <option value="Muhallebi"></option>
+                    <option value="Sütlac"></option>
+                    <option value="Kazandibi"></option>
+
+                </optgroup> <br>
+                <!-- datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+                <!-- DATALIST -->
+                <div>
+                    <label for="fav">Favori Dondurmanız?</label> <br />
+                    <input list="dondurmalar" id="fav" name="fav-dondurma" />
+                    <datalist id="dondurmalar">
+                        <!-- input list ile datalist in id si aynı olmalı ki liste çıksın -->
+                        <option value="Çikolatalı"></option>
+                        <option value="Limonlu"></option>
+                        <option value="Çilekli"></option>
+                        <option value="Fıstıklı"></option>
+                        <option value="Vanilya"></option>
+                    </datalist>
+                </div> <br>
+
+            </select>
+            <!--Textarea-->
+            <div>
+            
+                <label for="yorum"></label>
+                <textarea name="yorum" id="yorum" cols="10" rows="10" maxlength="100"
+                    placeholder="en fazla 100 karakter girilebilir" style="resize:none"></textarea>
+                <!-- style="resize: none : Yeniden boyutlandırılabilir özelliğini devre dışı bırakmak için kullanılır.
+             both : Yatayda ve dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. asılarak büyütülebilir
+            horizontal : Yatayda yeniden boyutlandırılabilir yapmak için kullanılır.
+            vertical : Dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. -->
+            </div>
+
+<!--Butonlar-->
+            <div>
+                <input type="submit">
+                <input type="reset">
+                <input type="button" value="Kaydet">
+            
+            </div> <br> <br>
+        </div>
+    </form>
+
+</body>
+
+</html>
