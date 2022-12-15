@@ -1,0 +1,24 @@
+.birinci {
+    font-family: 'Rubik Distressed', cursive;
+    background-color: black;
+    color: white;
+}
+
+.aktif {
+    font-family: "Silkscreen";
+    background-color: aqua;
+}
+
+
+div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* buradaki font-family yi bilgisayarımdan aldım */
+
+.menu {
+
+    background-color: lightgray;
+    text-align: center;
+    font-size: 40px;
+}
