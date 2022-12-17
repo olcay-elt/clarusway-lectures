@@ -1,63 +1,74 @@
-table{
-    border-collapse:collapse ;
+table {
+    border-collapse: collapse;
 }
 
-.liste tr:nth-child(odd){
+.liste tr:nth-child(odd) {
     background-color: pink;
     color: aqua;
 }
-.liste tr:nth-child(3){
+
+.liste tr:nth-child(3) {
     background-color: bisque;
 }
-.liste td:first-child{
+
+.liste td:first-child {
     font-weight: 900;
     color: cornflowerblue;
 }
-.liste td:last-child{
-color: darkcyan;
-font-style: italic;
+
+.liste td:last-child {
+    color: darkcyan;
+    font-style: italic;
 }
-td:hover{
-background-color: chartreuse;
+
+td:hover {
+    background-color: chartreuse;
 }
-.liste tr:hover{
+
+/*  alttaki gibi, tr lere özel stil eklediğimiz için tr hover kullanırken spesific class adı kullandık */
+/*! row lara hover olunca stil vermek istiyorsam, kimseye spesific stil vermemiş olmam gerekir, verdiysem ona da spesific davranmalıyım */
+.liste tr:hover {
     background-color: gray;
 }
-/*  alttaki gibi, tr lere özel stil eklediğimiz için tr hover kullanırken spesific class adı kullandık */
 
-/*! row lara hover olunca stil vermek istiyorsam, kimseye spesific stil vermemiş olmam gerekir, verdiysem ona da spesific davranmalıyım */
-#sepet{
+#sepet {
     color: rgb(156, 29, 55);
     font-size: 40px;
 }
-a{
+
+a {
     color: coral;
 }
-a:visited{
+
+a:visited {
     color: rgb(36, 219, 158);
 
 }
+
 /*ziyaret edilen sitenin rengi degisiyor*/
 
-a:active{
+a:active {
     color: cadetblue;
 }
+
 /*kutucugu tiklayinca renk degisiyor*/
 
-a:hover{
+a:hover {
     background-color: rgb(212, 137, 212);
     font-size: 30px;
 }
+
 .liste tr:nth-child(3)::after,
-.liste tr:nth-child(3)::before{
+.liste tr:nth-child(3)::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-content: "🌟";
+    font-weight: 500;
+    content: "🌟";
 }
+
 .liste tr::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content:"🌟" ;
+    content: "🌟";
     color: red;
     font-size: 30px;
 }
