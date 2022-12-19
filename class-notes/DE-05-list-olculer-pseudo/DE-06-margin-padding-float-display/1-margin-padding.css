@@ -1,0 +1,25 @@
+.btn{
+    background-color: beige;
+   /* margin-top:2rem ;
+    margin-bottom: 1rem;
+    margin-right: 2rem;*/
+    margin: 2rem 3rem 1rem 2rem;
+    padding: 1rem;
+
+}
+
+.span-btn{
+    background-color: burlywood;
+    /* 1-inline elementler widht-height alamaz, 
+    2-sag-sol margin alirlar ama alt-üst margin alamazlar
+    3-padding alabilirler ama komsularinin alanina müdahale ettigi icin kullanilmaz*/
+    padding-right: 2 rem;
+    padding-left: 2rem;
+}
+
+.new-btn{
+ background-color: red;
+ width: 20vw;
+ height: 20vw;
+ margin: 2rem;
+}
