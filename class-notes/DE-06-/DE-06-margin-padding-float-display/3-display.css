@@ -1,0 +1,36 @@
+/*Acilir menu*/
+.acilir-menu ul{
+    display: none;
+}
+.acilir-menu:hover ul{
+    display: block;
+    /*parent ina (nav) mouse ile gelinince child (ul) görünür olsun*/
+}
+
+/* Yatay menu*/
+.yatay-menu ul{
+    list-style-type: none;
+}
+.yatay-menu li{
+    background-color: bisque;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    /* li block old için normalde alt altalar. yanyana dizilsin ama width height margin almaya da devam etsin istiyorsak display: inline-block */
+    text-align: center;
+}
+
+a{text-decoration: none;
+    background-color: red;
+    padding: 1rem;
+    display: block;
+
+}
+a:hover{
+    background-color: aqua;
+}
+a:active{
+    color: white;
+
+}
