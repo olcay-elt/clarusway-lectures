@@ -41,7 +41,8 @@ body {
 .menu-title {
     display: inline-block;
     width: 100%;
-    background-color: blueviolet;
+    color: white;
+    background-color: rgb(101, 60, 26);
     text-align: center;
 }
 
