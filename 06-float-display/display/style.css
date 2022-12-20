@@ -48,7 +48,7 @@ body {
 
 .icon {
     height: 100%;
-    display: inline-block;
+    display: block;
     float: right;
     padding: 0px 20px;
     font-size: 56px;
