@@ -1,0 +1,43 @@
+h3 {
+    border: 1px solid purple;
+    border-radius: 50% 0;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    padding: 1rem;
+    outline: 3px solid red;
+    outline-offset: 1rem;
+}
+
+/* outline, öğenin border ının dışındaki bir çizgidir . */
+
+/* outline-offset=outline ile bir öğenin kenarı veya kenarlığı  arasındaki boşluk miktarını ayarlar . */
+
+/** Descendent Selector*/
+/*! kutu class'ı icerisinde tüm p'leri sec */
+
+/* .kutu p{
+ color:red;
+} */
+
+
+
+/** Child Selector */
+/*! parent'i kutu class olan tüm p'leri seç torunları seçme */
+
+/* .kutu > p{
+ color:purple;
+} */
+/*! h1 elementi kapandiktan sonraki ilk p elementi secer ama üstteki gibi bir stil varsa alttaki gibi bir stili ezer*/
+/** Adjacent Sibling */
+
+h1+p {
+    color: orange;
+}
+
+/*! h1 elementinden sonraki tüm p elementlerini seçer */
+/** general sibling selector */
+h1~p {
+
+    color: pink;
+}

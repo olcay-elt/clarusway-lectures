@@ -1,0 +1,14 @@
+.bg {
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.image1 {
+    background-image: url(../border.img/img/monalisa.jpeg);
+}
+
+.image2 {
+    background-image: url("https: //cdn.pixabay.com/photo/2022/10/08/06/31/hungarian-parliament-building-7506436__340.jpg")
+}
