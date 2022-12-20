@@ -32,7 +32,7 @@ span {
     box-sizing: border-box;
     display: inline-block;
     border: 18px solid rgb(176, 143, 44);
-    float: left;
+    float: left !important;
     border-radius: 5%;
     font-size: 20px;
     width: 20%;
@@ -47,7 +47,7 @@ span {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    float: right;
+    float: right !important;
     width: 80%;
     height: 108vh;
 
@@ -55,7 +55,7 @@ span {
 
 }
 
-.last {
+footer {
     background-color: rgb(161, 112, 49);
     color: white;
     text-align: center;
