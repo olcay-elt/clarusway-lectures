@@ -1,0 +1,86 @@
+/* *{margin:0} */
+
+.box {
+    width: 130px;
+    height: 130px;
+}
+
+.box1 {
+    background-color: aquamarine;
+    /*Relative'de bulunduğu yere (normalde olması gerektiği yere göre) göre konum belirlenebilir*/
+
+    position: relative;
+    left: 32px;
+    top: 48px;
+}
+
+.box2 {
+    background-color: blueviolet;
+    position: absolute;
+    left: 32px;
+    top: 48px;
+    /* right:50px;
+ bottom:50px; */
+    /* absolute=body ye göre yerleşir, relative=üst elemente göre, üstündekiyle aynı ölçüleri alırsa tam alt alta gelir.
+   !relative kendi başına hareket eder,etrafındakileri kıpırdatmaz yerini değiştirmez, yeni gelen onun bıraktığı yerden gelir, absolute kıpırdayınca yeri boşalır, yeni gelen absolute lı kutu yok gibi davranır*/
+    /* burada parent olmadığı için absolute=browser a ye göre yerleşir, relative=olması gereken yere göre,padding varsa padding le olması gereken yere göre kıpırdar*/
+}
+
+.box3 {
+    background-color: pink;
+    position: relative;
+    left: 32px;
+    top: 16px;
+}
+
+.box4 {
+    background-color: orange;
+    position: relative;
+    left: 32px;
+    top: 16px;
+
+    /* right:150px;
+ bottom:32px; */
+}
+
+
+
+.parent {
+    border: 15px solid green;
+    /* background-color: green; */
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    /* bu   div in parent ı body old için body ye göre üstten ve sağdan 16 px boşluk bırakır, kutu sağa yapışır, bottom verirsek alta yapışır. */
+    /* absolute padding den etkilenmez parent ına göre kıpırdar. toplam padding left ve bottom a verilir, sağlıklı değil */
+}
+
+.box5 {
+    /* child div, parent ında bir position varsa,absolute ile yine parent div ine göre kıpırdar ama parent ına position vermezsek yine body ye göre şekil alır */
+    background-color: red;
+
+    position: absolute;
+    /* position:relative; */
+
+    /* bu örneğe göre; parent ta border yoksa, child ın absolute top left alması ile relative top left alması aynı olur. ama border varsa , border ın içindeki kutu relative alınca bulunması gereken yere göre kıpırdar, absolute alırsa paret ına göre yani borderın dışta biten noktasına göre kıpırdar, bu yüzden farklılık gösterirler,  child ın ölçüleri parent a göre küçükse, bottom ve right verince, absolute ve relative border olsun olmasın çok farklılık gösterir, çünkü relative bulunması gereken yeri (alt ve sağda boşluk var halini) konum alırken, absolute, parent ın sağ alt dibini konum alır*/
+    top: 50px;
+    right: 50px;
+}
+
+.box6 {
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.box7 {
+    background-color: fuchsia;
+    position: fixed;
+    top: 0;
+}
+
+/* olduğu yerde kalır, koordinat vermek zorunda değilsiniz. ama verirseniz absolute gibi body ye göre şekil alır ve oraya fix lenir */
+/* top ölçüsü vermelisin, yoksa çalışmaz, verdiğin ölçüye kadar gider orada kalır */
