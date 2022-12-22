@@ -1,0 +1,79 @@
+.yazi {
+    margin: 2rem auto;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+/* ******ROTATE***** */
+.yazi1 {
+    background-color: yellow;
+    transform: rotateX(180deg);
+}
+
+.yazi2 {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+.yazi3 {
+    background-color: purple;
+    transform: rotate(45deg);
+}
+
+/* *******SCALE****** */
+.yazi4 {
+    background-color: green;
+}
+
+.yazi4:hover {
+    transform: scaleX(2) scaleY();
+}
+
+.yazi5 {
+    background-color: blueviolet;
+}
+
+.yazi5:hover {
+    transform: scale(0.5, 2);
+}
+
+button {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(180, 137, 79);
+    color: aliceblue;
+    font-size: 5rem;
+
+}
+
+/* ***TRANSLATE*** */
+.tren {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(220, 40, 220);
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 5s ease-in 3s;
+}
+
+.x:hover {
+    transform: translate(50px);
+}
+
+.y {
+    transform: translate(-50px);
+}
+
+.xy:hover {
+    transform: translate(50px, -50px);
+}

@@ -1,0 +1,23 @@
+@import"variable.css";
+
+body {
+    font-family: (--ff-montserrat);
+}
+
+nav {
+    display: flex;
+}
+
+nav.left,
+nav .middle,
+nav .right {
+    border: 1px solid rgb(43, 41, 41);
+    width: 33%;
+    border: 1px solid rgb(222, 134, 134);
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+nav .right {
+    background-color: var(--mavi7--);
+}
