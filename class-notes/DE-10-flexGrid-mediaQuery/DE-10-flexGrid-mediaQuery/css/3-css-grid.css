@@ -1,0 +1,63 @@
+.container{
+ display:grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows:repeat(4,15vh) 15vh 15vh;
+ gap:10px 20px;
+}
+.parca{
+ border:1px solid gray;
+
+ background-color: yellowgreen;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+.parca1{
+
+grid-column-start:1;
+grid-column-end:3;
+background-color: pink;
+
+}
+
+.parca4{
+ grid-row-start:2;
+grid-row-end:4;
+background-color: orange;;
+
+}
+
+
+.parca6{
+ background-image:url(../../assets/winter2.webp);
+
+ grid-row-start:2;
+ grid-row-end:4;
+ grid-column-start:3;
+ grid-column-end:5;
+ 
+
+ /** kısa yolu */
+ grid-area:2 / 3 /span 2 /span 2;
+
+ /* satır başlangıç / sütun başlangıç / span satır adedi / sütun adedi */
+}
+
+
+
+.parca8{
+
+ grid-column-start:1;
+ grid-column-end:3;
+ background-color: yellow;;
+ /* grid-row:5; */
+}
+
+.parca9{
+ grid-row-start:4;
+ grid-row-end:6;
+ background-color: aqua;
+
+ grid-column:3;
+}
