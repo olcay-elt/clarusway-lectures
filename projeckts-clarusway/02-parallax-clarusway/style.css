@@ -48,7 +48,7 @@ html {
 }
 
 .caption .border {
-    border: 5px solid;
+    border: 8px solid #960d96;
     border-radius: 40px 0 40px 0;
     display: inline-flex;
 }
