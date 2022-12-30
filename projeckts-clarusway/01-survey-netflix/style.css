@@ -10,17 +10,15 @@ body {
     margin: auto;
 }
 
-
-
-span {
-    color: rgb(255, 0, 0);
-
-}
-
 #title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     font-weight: 2500;
+
+}
+
+span {
+    color: rgb(255, 0, 0);
 
 }
 
