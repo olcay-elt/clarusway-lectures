@@ -6,11 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Survey</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- - Creat structure of the HTML5
+- Give name of your project (title)
+- Create the main structure of the container (div id="container")
+- Create Main Topic of the project (id="title")
+- Create a description of your project (id="description")
+- Create a form (id="survey-form")
+- Create 4 divisions (class="box") for each label and single-line text input field (Tips:dont forget to use placeholder)
+- Create a division (class="box") for a dropdown list. (Tips:dont forget to use a label tag)
+- Create a division (class="box") for checkbox list
+- Create a division (class="box") for radio buttons
+- Create a division (class="box") for a multi-line input field (Tips: a text area)
+- Create a button for id="submit" the form -->
+    <div id="container">
 
+        <div id="title">
+            <h1><span class="first">N</span>ET<span><span class="second">F</span>LIX</span></h1>
+        </div>
+        <div id="discription">
+            <h4>Thank you for signing up at Netflix. Tell us more about your self</h4>
+        </div>
+        <form action="" id="survey-form">
+            <div class="box">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" value="" placeholder="enter your name"><br>
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" value="" min="0" max="180" step="1" placeholder="age"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="enter your Email">
+                <br>
+            </div>
+            <label for="content">Content type</label>
+            <br>
+
+            <select name="content" id="content">
+                <option value="series">Series</option>
+                <option value="movie">Movie</option>
+            </select><br><br>
+            <div class="movie">
+                <label for="type">Movie type</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="comedy">Comedy</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="Action">Action</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="Romance">Romance</label><br>
+            </div><br>
+            <div class="gender">
+                <label for="Gender">Gender</label><br>
+                <input type="radio" name="gender" id="male" value="" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="Female" value="">
+                <label for="Female">Female</label><br>
+                <input type="radio" name="gender" id="Other" value="">
+                <label for="Other">Other</label><br>
+            </div><br>
+            <label for="feedback">Feed back</label><br>
+            <textarea name="feedback" id="feedback" cols="30" rows="4" placeholder="any comment"></textarea><br>
+            <div class="button">
+                <input id="button" type="button" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    </div>
 </body>
 
 </html>
