@@ -12,6 +12,8 @@
     position: relative;
     left: 32px;
     top: 48px;
+    z-index: 3;
+    /* z-index ile bir element'i diğerinin üzerine koyabilmek için o elementlerin position'ları static olMAMAlıdır. sayı büyük olan üsttedir,ardışık olmaları yeterli*/
 }
 
 .box2 {

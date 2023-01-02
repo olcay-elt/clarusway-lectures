@@ -1,0 +1,33 @@
+p {
+    height: 10vh;
+}
+
+.header1 {
+    background-image: linear-gradient(rgb(255, 17, 0), rgb(102, 255, 0));
+}
+
+.header2 {
+    background-image: linear-gradient(yellow, blue, green);
+}
+
+.header3 {
+    background-image: linear-gradient(to right, rgb(255, 60, 0), blue, rgb(128, 0, 105));
+}
+
+.header4 {
+    background-image: linear-gradient(45deg, rgb(94, 255, 0), rgb(255, 234, 0), rgb(241, 67, 209));
+}
+
+.header5 {
+    background-image: repeating-radial-gradient(yellow, red, blue);
+}
+
+.header6 {
+    background-image: repeating-radial-gradient(yellow 20%, red 30%, blue 50%);
+}
+
+.header7 {
+    background-image: linear-gradient(to right, #7622da 11%, #47c6eb 11%, #47c6eb 29%, #ed5f1f 29%, #ed5f1f 60%, #f59f28 60%, #f59f28 75%, #6b1e5b 75% 88%, #45b794 88%, #45b794 100%);
+}
+
+/* aynı rengi 2 kere yazıp ölçülerinin farkı kadar yeri almasını sağlayabiliriz böylelikle geçişli renk değil de keskin oluşur */
