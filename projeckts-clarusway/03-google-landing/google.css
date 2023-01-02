@@ -106,6 +106,45 @@ main .search {
     margin-top: 10px;
 }
 
+#input {
+    border: none !important;
+    outline: none;
+    cursor: pointer;
+}
+
 .container a:-webkit-any-link:not(.button) {
-    color: black !important;
+    color: black;
+    font-size: 16px;
+}
+
+.text a {
+    text-decoration: underline;
+    color: #4285f4 !important;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px;
+    /* satırlararası boşluk demek olduğu için, tek seferde bütün child larına alttan üstten padding vermiş gibi olur, bunu vermezsek her child a alttan üstten padding vermeliyiz */
+}
+
+.footer-country {
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #dadce0;
+    text-decoration: none;
+    display: flex;
+
+}
+
+.footer-bottom-left {
+    float: left;
+    padding-left: 16px;
+}
+
+.footer-bottom-right {
+    float: right;
 }
