@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 body {
     background-color: white;
-
     min-height: 100vh;
 }
 
@@ -46,14 +45,21 @@ header {
 }
 
 .right .menuIcon {
+    opacity: 0.4;
     vertical-align: middle;
+    /*ihtiyaci olmayan, bozuk kaardese uymasi gereken elemanlara uygulanir, bozuk olan elemanla dikeyde ortalar*/
+}
+
+.menuIcon:hover {
+    opacity: 1;
+
 }
 
 .button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #004eff;
+    background-color: #4285f4;
     color: white;
     height: 28px;
     margin-right: 10px;
