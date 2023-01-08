@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+}
+
 .card-text {
     color: rgb(149, 16, 154);
 }
@@ -5,4 +9,31 @@
 .cardHarvey {
     height: 100% !important;
     object-fit: cover;
+}
+
+.iconBox {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-us {
+    width: 800px;
+    height: 250px;
+}
+
+.imgBox {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.imgmap {
+    height: 700px;
 }
