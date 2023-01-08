@@ -29,11 +29,24 @@
 }
 
 .img {
-    width: 150px;
-    height: 150px;
+    width: 240px;
+    height: 240px;
+    border: rgb(200, 195, 195) solid 8px;
     border-radius: 50%;
 }
 
 .imgmap {
     height: 700px;
+}
+
+.brand {
+    width: 150px;
+}
+
+.contact {
+    background: url(./img/map.jpeg) no-repeat center center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-size: cover;
+    color: antiquewhite;
 }
